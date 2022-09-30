@@ -1,14 +1,18 @@
 package com.tcc.apitcc.servicios;
 
+import com.tcc.apitcc.entidades.Mercancia;
+
+import java.util.Optional;
+
 public interface MercanciaServicio {
 
-    //consultarmercancias
+    public Iterable<Mercancia> buscarMercancias();
 
-    //consultar mercancia por iup
+    public Optional<Mercancia> buscarMercanciasPorId(Integer id);
 
-    //guardarmercancia
+    public Mercancia guardarMercancia(Mercancia mercancia);
 
-    //eliminarmercancia
+    public void eliminarMercanciaPorId(Integer id);
 
 
 }
